@@ -1,4 +1,7 @@
 # Internal routing configuration to handle ESI
-#_internal:
-#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
-#   prefix:   /_internal
+_home:
+    pattern:  /
+    defaults: { _controller: AcmeDemoBundle:Home:index }
+_evento:
+    pattern:   /event/{slug}
+    defaults:  { _controller: AcmeDemoBundle:Evento:mostrar } 
